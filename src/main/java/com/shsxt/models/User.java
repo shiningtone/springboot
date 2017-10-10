@@ -6,12 +6,13 @@ import java.util.Date;
  * Created by administer on 2017/10/10.
  */
 public class User implements Serializable {
-    private Integer age;
-    private String gender;
-    private String name;
-    private Date UpdateDate;
-    private String password;
+
     private  Integer id;
+    private String userName;
+    private String trueName;
+    private String email;
+    private String phone;
+    private Date updateDate;
 
     public Integer getId() {
         return id;
@@ -21,44 +22,44 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getUserName() {
+        return userName;
     }
 
-    public String getGender() {
-        return gender;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public String getTrueName() {
+        return trueName;
     }
 
-    public String getName() {
-        return name;
+    public void setTrueName(String trueName) {
+        this.trueName = trueName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public Date getUpdateDate() {
-        return UpdateDate;
+        return updateDate;
     }
 
     public void setUpdateDate(Date updateDate) {
-        UpdateDate = updateDate;
+        this.updateDate = updateDate;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-
-    }
 }
