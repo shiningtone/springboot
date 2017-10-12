@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.shsxt.service.UserService;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by administer on 2017/10/10.
@@ -24,6 +25,12 @@ public class UserController {
     public User findById(@PathVariable Integer id) {
         User user = userService.findById(id);
         return user;
+    }
+    @RequestMapping("find_all")
+    public List<User> findAll()
+    {
+        List users=userService.findAll();
+        return users;
     }
 
 }
