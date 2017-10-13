@@ -15,8 +15,5 @@ public interface UserDao {
     @Select("select * from t_user where id=#{id}")
     public User findById(@Param(value="id") Integer id);
 
-    public List<User>
-
-
-    findAll();
+    public List<User> findAll();
 }
