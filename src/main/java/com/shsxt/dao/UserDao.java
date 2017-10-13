@@ -16,4 +16,6 @@ public interface UserDao {
     public User findById(@Param(value="id") Integer id);
 
     public List<User> findAll();
+    
+    public User findById(String Id);
 }
